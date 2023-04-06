@@ -1,11 +1,17 @@
-//let , const
+//primitive date types
+//sting, number, boolean, undefined, null
 
-let myDemo = document.getElementById("demo").innerHTML ="Hello, Javascript";// print in id demo "Hello, Javascript"
+const firstName = "Smith";
+const score =  7;
+const rating = 5.2;
+const isBad = true;
+const x = null;
+const y = undefined;
+let a;
+console.log(typeof(firstName,score,rating,isBad,x,y,a));
 
-//modify demo value
-myDemo = document.getElementById("demo").innerHTML = "Javascript is Fun!";//print new myDemo Value Javascript is Fun!
-document.getElementById("demo").style.color = "green";
+//Concatenation
+let myDemo = document.getElementById("demo").innerHTML = firstName + " scores " + score + " makes his rating go " + rating + ".";
 
-const myDemo1 = document.getElementById("demo1").innerHTML ="Hello, John";//print Hello, John
-
-myDemo1 = document.getElementById("demo1").innerHTML ="Hello, Cris";// print the new value but throws error
+//Template String/Literals
+let demo1 = document.getElementById("demo1").innerHTML = `His name is ${firstName} and his score is ${score}.`;
